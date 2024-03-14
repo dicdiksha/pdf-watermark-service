@@ -8,5 +8,5 @@ A PDF-WaterMark-Service add the watermark to any pdf.
 
 ## One step installation 
 1. Go to Root folder (pdf-watermark-service)
-2. sbt run=> spin up the server on port 9001
+2. sbt run=> spin up the server on port 9000
 3. sbt "run 9001" => to spin up the server on custom port
