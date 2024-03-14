@@ -1,0 +1,1 @@
+package object implicits extends FutureImplicits
