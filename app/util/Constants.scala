@@ -2,8 +2,9 @@ package util
 
 object Constants {
 
-  val SUCCESS = ""
+  val SUCCESS = "Success"
   val WATERMARKTEXT = "Confidential"
   val validMimeType = "pdf"
-  val OUTPUTPATH = "D:\\pdftestfile/watermark-output.pdf"
+  val OUTPUTPATH = "content/assets/watermark-output.pdf"
+  val PREFIXOUTPUTPATH = "https://obj.diksha.gov.in/" + AppConf.getStorageContainer + "/"
 }
