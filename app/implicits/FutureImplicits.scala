@@ -16,7 +16,7 @@ private[implicits] trait FutureImplicits {
     def toAsync()(implicit ex: ExecutionContext, tjs: Writes[T]): Async[T] =
       future.map{ res=>
        val response = Json.toJson(res)
-       println(s"Response Result: $response")
+       println(s"Response Payload: $response")
         Ok(response)
       }.recover {
         case fileNotFoundExp: FileNotFoundException =>

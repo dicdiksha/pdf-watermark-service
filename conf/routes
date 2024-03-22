@@ -4,9 +4,8 @@
 # ~~~~
 
 # An example controller showing a sample home page
-GET     /                           controllers.WaterMarkController.index()
+#GET     /                           controllers.WaterMarkController.index()
 
-# Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file                         controllers.Assets.versioned(path="/public", file: Asset)
+# Controller which add watermark to the pdf
 POST    /content/pdf/v1/create/:identifier    controllers.WaterMarkController.createWaterMark(identifier: String)
 GET     /health                               controllers.WaterMarkController.healthCheck
