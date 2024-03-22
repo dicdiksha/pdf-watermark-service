@@ -3,9 +3,6 @@
 # https://www.playframework.com/documentation/latest/ScalaRouting
 # ~~~~
 
-# An example controller showing a sample home page
-#GET     /                           controllers.WaterMarkController.index()
-
 # Controller which add watermark to the pdf
 POST    /content/pdf/v1/create/:identifier    controllers.WaterMarkController.createWaterMark(identifier: String)
 GET     /health                               controllers.WaterMarkController.healthCheck
